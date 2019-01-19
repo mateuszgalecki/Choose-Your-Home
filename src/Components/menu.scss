@@ -1,0 +1,26 @@
+.menuNav{
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+  color: #041005;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom-color 0.3s ease-in;
+  .logo {
+    margin-right: 8%;
+  }
+  .menu {
+    margin-left: 8%;
+    display: flex;
+    list-style: none;
+    .link {
+      margin-right: 20%;
+    }
+  }
+}
+
+.menuBorderClass {
+  border-bottom-color: darkslategrey;
+}

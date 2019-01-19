@@ -1,0 +1,41 @@
+.team {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  .team__header {
+    font-size: 2.5em;
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    &:after {
+      content: '';
+      display: block;
+      height: 2px;
+      background-color: #041005;
+      width: 140%;
+      position: absolute;
+      left: -20%;
+      bottom: -4px;
+    }
+  }
+  .team__div {
+    padding-left: 6%;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    @media (max-width: 1000px) and (min-width: 934px){
+      padding-left: 5%;
+    }
+    @media (max-width: 933px) and (min-width: 861px) {
+      padding-left: 4%;
+    }
+    @media (max-width: 860px) {
+      padding-left: 3%;
+    }
+  }
+}

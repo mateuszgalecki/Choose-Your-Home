@@ -1,0 +1,48 @@
+.teamMember {
+  width: 160px;
+  height: 280px;
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  color: #041005;
+  border-radius: 20%;
+  .memberPhoto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid darkslategrey;
+    margin: 18px 0;
+    background-image: url("../images/uncleDave.jpeg");
+    background-size: cover;
+  }
+  .teamMemberName {
+    font-size: 1.4em;
+    margin-top: 20px;
+  }
+}
+
+.teamMemberDesc {
+  color: #041005;
+  width: 160px;
+  height: 280px;
+  background-color: transparent;
+  border-radius: 20%;
+  .teamMemberDescP {
+    margin-top: 36px;
+    text-align: center;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -35px;
+      width: 10px;
+      height: 10px;
+      left: 75px;
+      background-color: #041005;
+      border-radius: 50%;
+    }
+  }
+}
